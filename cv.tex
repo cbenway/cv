@@ -1,0 +1,215 @@
+% CV prepared with help from this awesome post
+% http://texblog.org/2012/04/25/writing-a-cv-in-latex/
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage{helvet}
+
+\usepackage{hyperref}
+\hypersetup{
+   colorlinks,
+   citecolor=black,
+   filecolor=black,
+   linkcolor=black,
+   urlcolor=blue
+}
+
+\usepackage{url}
+\usepackage{bibentry}
+
+% Reformat the date
+% http://www.howtotex.com/packages/customize-the-date-format-in-your-latex-documents/
+% \usepackage{datetime}
+% \newdateformat{mydate}{\THEYEAR\ \monthname[\THEMONTH] \THEDAY\textsuperscript{th}}
+
+% \author{
+%    \href{mailto:christopher.benway@gmail.com}{christopher.benway@gmail.com}
+% }
+% \date{\mydate\today}
+
+% remove date and whitespace from title
+\date{\vspace{-10ex}}
+
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+% remove space above title
+\title{\vspace{-12ex}Dave Ting Pong Tang}
+
+%\title{\bfseries\Large Dave Ting Pong Tang}
+\maketitle
+
+% this section from https://github.com/watsonbox/cv_template_2004
+
+\parbox[t]{0.5\textwidth}{
+\begin{tabbing}
+\hspace{3cm} \= \hspace{4cm} \= \kill
+{\bf Address} \> 9 Hastings Street #2\\
+\> West Roxbury MA 02132 \\
+{\bf Date of Birth} \> 1986 May 25\textsuperscript{st} \\
+{\bf Nationality} \> Unites States of America \\
+\end{tabbing}
+}
+\hfil
+\parbox[t]{0.5\textwidth}{
+\begin{tabbing}
+\hspace{2cm} \= \hspace{4cm} \= \kill
+{\bf GitHub} \> \href{https://github.com/cbenway}{https://github.com/cbenway} \\
+{\bf Twitter} \> \href{https://twitter.com/cbenway}{https://twitter.com/cbenway} \\
+{\bf Email} \> \href{mailto:christopher.benway@gmail.com}{christopher.benway@gmail.com} \\
+{\bf Phone} \> 617-359-7670
+\end{tabbing}
+}
+
+% http://en.wikibooks.org/wiki/LaTeX/Boxes#minipage_and_parbox
+% \begin{minipage}[ht]{.40\textwidth}\centering
+% 100 Roberts Road, Subiaco \\
+% Western Australia 6008 \\
+% Australia
+% \end{minipage}
+% \begin{minipage}[ht]{.50\textwidth}\centering
+% Twitter: \href{https://twitter.com/davetang31}{@davetang31} \\
+% GitHub: \href{https://github.com/davetang}{davetang} \\
+% Blog: \href{http://davetang.org/muse}{http://davetang.org/muse}
+% \end{minipage}
+
+\section*{Summary}
+
+I am currently a post-doctoral researcher at Brigham and Women's Hospital and Harvard Medical School Channing Division of Network Medicine working on genetics and functional genomics of chronic obstructive pulmonary disease (COPD). My current research involves genome-wide association studies, statistical genetics and fine-mapping, transcriptomics, and chromatin accessibility assays.  During my Ph.D. in the lab of John Iacomini at Tufts University Sackler School of Biomedical Sciences I worked on in vivo and cell-based models of calcineurin inhibitor nephrotoxicity, using transcriptomics and sequencing methods to detect in vivo miRNA:mRNA targeting. In prior work as a research technician I have largely worked on molecular and cell biology projects related to immune function, ER stress, gene therapy, and high throughput chemical biology screens. 
+
+% \section*{Personal}
+% \begin{tabular}{L!{\VRule}R}
+%    DOB & 1983 March 31\textsuperscript{st} \\
+%    Birth place & Hong Kong \\
+%    Nationality & Australian and British National (Overseas) \\
+% \end{tabular}
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+   2010--2015 & PhD, Vrije University, the Netherlands. \href{https://github.com/davetang/thesis}{PhD thesis}: High-throughput sequencing and transcriptomics: methods development and data analysis of large expression data sets. \\
+   2001--2005 & BSc (Honours) in biochemistry and microbiology, University of Queensland, Australia. \href{https://github.com/davetang/cv/blob/master/honours_thesis.pdf}{Honours thesis}: Using a supertree approach to detect laterally transferred genes within \textit{Staphylococcus}. \\
+\end{tabular}
+
+\section*{Past Scientific Positions}
+\begin{tabular}{L!{\VRule}R}
+   2015--2017 & Post-doctoral researcher in the lab of Timo Lassmann at the Telethon Kids Institute, Australia \\
+   2010--2015 & Research Associate in the lab of Piero Carninci at RIKEN Yokohama, Japan \\
+   2008--2010 & Research Assistant in the lab of Sean Grimmond at the University of Queensland, Australia \\
+   2006--2008 & Research Assistant in the lab of Brian Dalrymple at the Commonwealth Scientific and Industrial Research Organisation, Australia \\
+   2005--2006 & Research Assistant in the lab of Mark Ragan at the University of Queensland, Australia \\
+\end{tabular}
+
+\section*{Grants}
+\begin{tabular}{L!{\VRule}R}
+   2017 & Dissecting the leukaemia microenvironment - \href{https://www.cancerwa.asn.au/research/funding/collaborative_cancer_grant_scheme/}{Cancer Council WA Collaborative Cancer Grant Scheme} CIC AUD 43,395 \\
+   2016 & Targeting four-stranded DNA conformations to modulate gene expression in breast cancer - \href{https://www.cancerwa.asn.au/research/funding/collaborative_cancer_grant_scheme/}{Cancer Council WA Collaborative Cancer Grant Scheme} CIC AUD 47,669 \\
+   2015 & \href{http://telethonkids.org.au/our-research/projects-index/g/genetics-seqnextgen-translating-nextgen-sequencing-for-the-diagnosis-of-developmental-anomalies-and-rare-diseases/}{SeqNextGen}: Translating NextGen Sequencing for the Diagnosis of Developmental Anomalies and Rare Diseases Telethon - Perth Children's Hospital Research Fund AI4 AUD 192,505 \\
+\end{tabular}
+
+% \section*{Research Interests}
+% 
+% \begin{itemize}
+%    \setlength\itemsep{0em}
+%    \item Investigating the potential role of genetic variants in relation to biological function and disease.
+%    \item Genomics and transcriptomics; in particular the study of non-coding RNAs and transposable elements.
+%    \item The application of bioinformatics, in particular \href{https://github.com/davetang/machine_learning}{machine learning} and data mining methods, to biological problems.
+% \end{itemize}
+
+\section*{Honours and Awards}
+\begin{tabular}{L!{\VRule}R}
+   2010 & CSIRO Chairman's Medal \\
+   2008 & CSIRO Partnership Excellence Award \\
+\end{tabular}
+
+\section*{Academic and Administrative Experience}
+\begin{tabular}{L!{\VRule}R}
+   2017 & Presenter at the Australian Bioinformatics and Computational Biology Society (ABACBS) WA meeting \\
+   2015 & MODHEP workshop presenter on \href{https://github.com/davetang/cage_r}{analysing CAGE data} \\
+   2013--2014 & Organiser of the Chat with Guest sessions at RIKEN CLST DGT \\
+   2013--2014 & Organiser of the Student Journal Club at RIKEN CLST DGT \\
+   2013 & Organising committee for the \href{http://www.nature.com/natureevents/science/events/20919-BrainTrain_Conference}{BrainTrain conference} \\
+   2013 & Organiser of the BrainTrain workshop: Identifying regulatory elements in the genome \\
+   2012 & Session chair for the \href{http://www.osc.riken.jp/english/event/2012/121115}{Patients and Medicines forum} \\
+   2012 & Presenter at the RIKEN OSC bioinformatics course
+\end{tabular}
+
+\section*{Workshop and Course Attendances}
+\begin{tabular}{L!{\VRule}R}
+   2016 & \href{https://www.australiangenomics.org.au/news-events/events/2016/agha-workshop-2016-reducing-morbidity-and-mortality-from-genetic-disease-through-screening/}{AGHA Workshop: reducing morbidity and mortality from genetic disease through screening} \\
+   2016 & \href{http://www.involvingpeopleinresearch.org.au/}{Consumer and Community Involvement in Research} workshop \\
+   2015 & UQ winter school in mathematical and computational biology \\
+   2014 & RIKEN/KI doctoral course: Employing Genome-wide Technologies for Functional Regulation in Development and Disease \\
+   2013 & AMATA conference ECR workshop \\
+   2013 & Coursera data analysis course from Johns Hopkins University \\
+   2013 & BrainTrain \href{http://www.brain-train.nl/training-2/}{courses and workshops} \\
+   2013 & RIKEN/KI doctoral course: Epigenomics: Methods and Applications to Disease and Development \\
+   2012 & SISSA summer school on dopaminergic neurons \\
+   2012 & RIKEN/KI doctoral course: Functional Regulation in Development and Disease \\
+   2011 & UQ winter school in mathematical and computational biology \\
+   2011 & RIKEN/EBI bioinformatics roadshow \\
+\end{tabular}
+
+\section*{Editorial Activities}
+Referee/Reviewer (number of grant proposals/manuscripts reviewed in parenthesis) for: National Health and Medical Research Council (1), BMC Genomics (1), PeerJ (1), and Scientific Reports (2).
+
+\section*{Bioinformatic Skills}
+
+\begin{itemize}
+   \setlength\itemsep{0em}
+   \item Data analysis of high-throughput sequencing data including DNA-seq, RNA-seq, CAGE-seq, sRNA-seq, ChIP-seq, and scRNA-seq.
+   \item Knowledge and the ability to use various bioinformatic databases, APIs, repositories, and tools.
+   \item Ability to implement bioinformatic pipelines using pipelining tools such as Bpipe and Snakemake.
+\end{itemize}
+
+\section*{Computer Skills}
+
+\begin{itemize}
+   \setlength\itemsep{0em}
+   \item Operating systems: Linux/Unix (RHEL/CentOS and Ubuntu), OS X, and Windows.
+   \item Programming/scripting languages: Perl, R, \href{https://github.com/davetang/getting_started_with_c}{C}, \href{https://github.com/davetang/learning_python}{Python}, Bash, SQL, and PHP.
+   \item Reproducible research tools: \href{https://github.com/davetang/getting_started_with_git}{git}, cloud computing (AWS), WordPress, Jekyll, \href{https://github.com/davetang/learning_docker/}{Docker}, Markdown, R Markdown, and bookdown.
+\end{itemize}
+
+\section*{Hobbies and Interests}
+Sports (especially basketball), cycling, blogging, \href{https://www.datacamp.com/profile/davetang31}{data science}, reading, and movies.
+
+\section*{Academic References}
+
+\begin{minipage}[ht]{.50\textwidth}
+Brian Dalrymple \\
+Honorary Research Fellow, \\
+Institute of Agriculture, \\
+The University of Western Australia \\
+Australia \\
+\href{mailto:brian.dalrymple@uwa.edu.au}{brian.dalrymple@uwa.edu.au} \\
+Phone: +61 408 697 130
+\end{minipage}
+\begin{minipage}[ht]{.50\textwidth}
+Piero Carninci \\
+RIKEN Yokohama Campus \\
+1-7-22 Suehiro-cho, Tsurumi-ku, Yokohama \\
+Kanagawa 230-0045 \\
+Japan \\
+\href{mailto:carninci@riken.jp}{carninci@riken.jp} \\
+Phone: +81 45 503 9222
+\end{minipage}
+
+\section*{Publications}
+% http://tex.stackexchange.com/questions/22645/hiding-the-title-of-the-bibliography
+\begingroup
+   \renewcommand{\section}[2]{}
+   \bibliographystyle{unsrturl}
+   \nocite{*}
+   \bibliography{pub}
+\endgroup
+
+\vfill
+
+\footnotesize
+This C.V. was prepared in \LaTeX\ and is available at \href{https://github.com/davetang/cv}{https://github.com/davetang/cv}.
+
+\end{document}
